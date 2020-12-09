@@ -59,7 +59,7 @@ class LandingViewController: ViewController, WKScriptMessageHandler {
             webView.configuration.userContentController.add(self, name: "accenture")
         }
         
-        if let url = URL(string: "http://192.168.27.231:3000") {
+        if let url = URL(string: "http://192.168.27.213:3000") {
             webView.load(URLRequest(url: url))
         }
         

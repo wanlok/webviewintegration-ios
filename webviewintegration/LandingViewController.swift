@@ -26,6 +26,7 @@ class LandingViewController: ViewController, WKScriptMessageHandler, UITextField
                 return
             }
             self.textField.text = ""
+            self.textField.resignFirstResponder()
         }
     }
     
@@ -36,6 +37,7 @@ class LandingViewController: ViewController, WKScriptMessageHandler, UITextField
                 return
             }
             self.textField.text = ""
+            self.textField.resignFirstResponder()
         }
     }
     

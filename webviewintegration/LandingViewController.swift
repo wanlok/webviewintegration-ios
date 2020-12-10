@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class LandingViewController: ViewController, WKScriptMessageHandler {
+class LandingViewController: ViewController, WKScriptMessageHandler, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var addButton: UIButton!
@@ -48,6 +48,8 @@ class LandingViewController: ViewController, WKScriptMessageHandler {
         
         title = "WebView Integration Demo"
 
+        textField.delegate = self
+        
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(refreshWebView(_:)), for: UIControl.Event.valueChanged)
         webView.scrollView.addSubview(refreshControl)
@@ -81,8 +83,26 @@ class LandingViewController: ViewController, WKScriptMessageHandler {
                 let viewController = UIImagePickerController()
                 viewController.sourceType = .camera
                 viewController.allowsEditing = true
-//                viewController.delegate = self
+                viewController.delegate = self
                 present(viewController, animated: true)
+            }
+        }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true, completion: nil)
+        guard let image = info[.editedImage] as? UIImage, let base64String = image.jpegData(compressionQuality: 1)?.base64EncodedString() else {
+            return
+        }
+        self.webView.evaluateJavaScript("addBase64StringImage('\("data:image/png;base64, \(base64String)")')") { result, error in
+            guard error == nil else {
+                print(error)
+                return
             }
         }
     }

@@ -15,6 +15,8 @@
 		5370AC57257B46B500ABA1FF /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5370AC55257B46B500ABA1FF /* LandingViewController.swift */; };
 		5370AC58257B46B500ABA1FF /* LandingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5370AC56257B46B500ABA1FF /* LandingViewController.xib */; };
 		5370AC5B257B4B6C00ABA1FF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5370AC5A257B4B6C00ABA1FF /* WebKit.framework */; };
+		53F7D7D02599EE7800227562 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F7D7CE2599EE7800227562 /* MessageTableViewCell.swift */; };
+		53F7D7D12599EE7800227562 /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53F7D7CF2599EE7800227562 /* MessageTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		5370AC55257B46B500ABA1FF /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		5370AC56257B46B500ABA1FF /* LandingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingViewController.xib; sourceTree = "<group>"; };
 		5370AC5A257B4B6C00ABA1FF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		53F7D7CE2599EE7800227562 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		53F7D7CF2599EE7800227562 /* MessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				5370AC45257B457B00ABA1FF /* ViewController.swift */,
 				5370AC55257B46B500ABA1FF /* LandingViewController.swift */,
 				5370AC56257B46B500ABA1FF /* LandingViewController.xib */,
+				53F7D7CE2599EE7800227562 /* MessageTableViewCell.swift */,
+				53F7D7CF2599EE7800227562 /* MessageTableViewCell.xib */,
 				5370AC47257B457B00ABA1FF /* Main.storyboard */,
 				5370AC4A257B457D00ABA1FF /* Assets.xcassets */,
 				5370AC4C257B457D00ABA1FF /* LaunchScreen.storyboard */,
@@ -142,6 +148,7 @@
 			files = (
 				5370AC4E257B457D00ABA1FF /* LaunchScreen.storyboard in Resources */,
 				5370AC4B257B457D00ABA1FF /* Assets.xcassets in Resources */,
+				53F7D7D12599EE7800227562 /* MessageTableViewCell.xib in Resources */,
 				5370AC58257B46B500ABA1FF /* LandingViewController.xib in Resources */,
 				5370AC49257B457B00ABA1FF /* Main.storyboard in Resources */,
 			);
@@ -155,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5370AC46257B457B00ABA1FF /* ViewController.swift in Sources */,
+				53F7D7D02599EE7800227562 /* MessageTableViewCell.swift in Sources */,
 				5370AC57257B46B500ABA1FF /* LandingViewController.swift in Sources */,
 				5370AC42257B457B00ABA1FF /* AppDelegate.swift in Sources */,
 			);

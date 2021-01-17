@@ -17,7 +17,18 @@
 		5370AC5B257B4B6C00ABA1FF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5370AC5A257B4B6C00ABA1FF /* WebKit.framework */; };
 		53F7D7D02599EE7800227562 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F7D7CE2599EE7800227562 /* MessageTableViewCell.swift */; };
 		53F7D7D12599EE7800227562 /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53F7D7CF2599EE7800227562 /* MessageTableViewCell.xib */; };
+		E5EC7DE825B1AEC50099F42E /* webviewintegrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EC7DE725B1AEC50099F42E /* webviewintegrationUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E5EC7DEA25B1AEC50099F42E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5370AC36257B457B00ABA1FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5370AC3D257B457B00ABA1FF;
+			remoteInfo = webviewintegration;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5370AC3E257B457B00ABA1FF /* webviewintegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = webviewintegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +43,9 @@
 		5370AC5A257B4B6C00ABA1FF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		53F7D7CE2599EE7800227562 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		53F7D7CF2599EE7800227562 /* MessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
+		E5EC7DE525B1AEC50099F42E /* webviewintegrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = webviewintegrationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5EC7DE725B1AEC50099F42E /* webviewintegrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webviewintegrationUITests.swift; sourceTree = "<group>"; };
+		E5EC7DE925B1AEC50099F42E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +57,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E5EC7DE225B1AEC50099F42E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -50,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				5370AC40257B457B00ABA1FF /* webviewintegration */,
+				E5EC7DE625B1AEC50099F42E /* webviewintegrationUITests */,
 				5370AC3F257B457B00ABA1FF /* Products */,
 				5370AC59257B4B6C00ABA1FF /* Frameworks */,
 			);
@@ -59,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				5370AC3E257B457B00ABA1FF /* webviewintegration.app */,
+				E5EC7DE525B1AEC50099F42E /* webviewintegrationUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,6 +111,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E5EC7DE625B1AEC50099F42E /* webviewintegrationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E5EC7DE725B1AEC50099F42E /* webviewintegrationUITests.swift */,
+				E5EC7DE925B1AEC50099F42E /* Info.plist */,
+			);
+			path = webviewintegrationUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -108,18 +140,40 @@
 			productReference = 5370AC3E257B457B00ABA1FF /* webviewintegration.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E5EC7DE425B1AEC50099F42E /* webviewintegrationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5EC7DEE25B1AEC50099F42E /* Build configuration list for PBXNativeTarget "webviewintegrationUITests" */;
+			buildPhases = (
+				E5EC7DE125B1AEC50099F42E /* Sources */,
+				E5EC7DE225B1AEC50099F42E /* Frameworks */,
+				E5EC7DE325B1AEC50099F42E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5EC7DEB25B1AEC50099F42E /* PBXTargetDependency */,
+			);
+			name = webviewintegrationUITests;
+			productName = webviewintegrationUITests;
+			productReference = E5EC7DE525B1AEC50099F42E /* webviewintegrationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		5370AC36257B457B00ABA1FF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1160;
+				LastSwiftUpdateCheck = 1210;
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = "Robert Wan";
 				TargetAttributes = {
 					5370AC3D257B457B00ABA1FF = {
 						CreatedOnToolsVersion = 11.6;
+					};
+					E5EC7DE425B1AEC50099F42E = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 5370AC3D257B457B00ABA1FF;
 					};
 				};
 			};
@@ -137,6 +191,7 @@
 			projectRoot = "";
 			targets = (
 				5370AC3D257B457B00ABA1FF /* webviewintegration */,
+				E5EC7DE425B1AEC50099F42E /* webviewintegrationUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -154,6 +209,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E5EC7DE325B1AEC50099F42E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -168,7 +230,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E5EC7DE125B1AEC50099F42E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5EC7DE825B1AEC50099F42E /* webviewintegrationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E5EC7DEB25B1AEC50099F42E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5370AC3D257B457B00ABA1FF /* webviewintegration */;
+			targetProxy = E5EC7DEA25B1AEC50099F42E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5370AC47257B457B00ABA1FF /* Main.storyboard */ = {
@@ -346,6 +424,48 @@
 			};
 			name = Release;
 		};
+		E5EC7DEC25B1AEC50099F42E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5LXC4J33Z5;
+				INFOPLIST_FILE = webviewintegrationUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wanlok.webviewintegrationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = webviewintegration;
+			};
+			name = Debug;
+		};
+		E5EC7DED25B1AEC50099F42E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5LXC4J33Z5;
+				INFOPLIST_FILE = webviewintegrationUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wanlok.webviewintegrationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = webviewintegration;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -363,6 +483,15 @@
 			buildConfigurations = (
 				5370AC53257B457D00ABA1FF /* Debug */,
 				5370AC54257B457D00ABA1FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5EC7DEE25B1AEC50099F42E /* Build configuration list for PBXNativeTarget "webviewintegrationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5EC7DEC25B1AEC50099F42E /* Debug */,
+				E5EC7DED25B1AEC50099F42E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
